@@ -10,7 +10,7 @@ public class TestRepositorios {
             repo1.inserir(new PessoaFisica("Godalfredo Silva", 1, "123.456.789-10", 25));
             repo1.inserir(new PessoaFisica("Josenilda Santos", 2, "123.456.789-11", 17));
             
-            String arquivoPessoasFisicas = "pessoas_fisicas.dat";
+            String arquivoPessoasFisicas = "pessoas_fisicas.bin";
             repo1.persistir(arquivoPessoasFisicas);
             System.out.println("Dados de Pessoa Fisica Armazenados.");
             
@@ -31,7 +31,7 @@ public class TestRepositorios {
             repo3.inserir(new PessoaJuridica("Godalfredo Silva", 1, "12.345.678/000-90"));
             repo3.inserir(new PessoaJuridica("Josenilda Santos", 2, "12.345.678/000-91"));
             
-            String arquivoPessoaJuridica = "pessoa_juridica.dat";
+            String arquivoPessoaJuridica = "pessoa_juridica.bin";
             repo3.persistir(arquivoPessoaJuridica);
             System.out.println("Dados de Pessoa Juridicas Armazenados.");
             
